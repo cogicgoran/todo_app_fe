@@ -1,0 +1,45 @@
+.sidebar {
+    position: relative;
+    background-color: #ccc;
+    padding-bottom: 24px;
+    border-right: 2px solid #ddd;
+    width: 200px;
+}
+
+.sidebar-logo {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+}
+
+.sidebar__options-container {
+    padding: 1em;
+}
+
+.sidebar__option {
+    margin-bottom: 1em;
+    color: #555;
+    cursor: pointer;
+}
+
+.sidebar__option:hover {
+    color: #f88;
+}
+
+.sidebar__option.active {
+    color: #f66;
+}
+
+.sidebar__option.active::before {
+    content: '';
+    position: relative;
+    top: -200%;
+    transform: translateY(-4px);
+    margin-right: 4px;
+    width: 20px;
+    height: 2px;
+    background-color: #f66;
+    display: inline-block;
+}

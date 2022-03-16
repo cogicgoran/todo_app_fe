@@ -1,0 +1,34 @@
+header {
+  position: relative;
+  padding: 4px;
+  text-align: center;
+  background-color: #eee;
+  border: 2px solid #ddd;
+  padding-left: 204px;
+}
+
+.header__logo {
+  height: 70px;
+}
+
+.logout__container {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logout-btn {
+  padding: 0.4em 0.6em 0.3em;
+  border-radius: 0.4em;
+  color: #eee;
+  border: 1px solid #fff;
+  background-color: #555;
+  transition: background-color 200ms, color 200ms;
+}
+
+.logout-btn:hover {
+  color: #fff;
+  background-color: #444;
+  cursor: pointer;
+}

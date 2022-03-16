@@ -1,0 +1,17 @@
+.task-form {
+    display: block;
+    width: 300px;
+    padding: 1em;
+    margin: 16px auto 0;
+    background-color: #bbb;
+    text-align: center;
+
+    border-radius: 0.2em;
+}
+
+.task-form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 3.5ch;
+    font-size: 16px;
+}

@@ -1,0 +1,32 @@
+.form-auth-btn {
+  border-radius: 0.1em;
+  width: 100%;
+  margin-top: 16px;
+  padding: 0.2em 0.5em 0.1em;
+  font-size: 18px;
+  color: #777;
+  cursor: pointer;
+  transition: color 150ms, background-color 150ms;
+}
+
+.form-auth-btn:hover {
+  color: #fff;
+  background-color: #777;
+}
+
+.form-todo-btn {
+  border-radius: 0.1em;
+  width: 100%;
+  margin-top: 16px;
+  padding: 0.2em 0.5em 0.1em;
+  font-size: 18px;
+  color: #777;
+  cursor: pointer;
+  transition: color 150ms, background-color 150ms;
+}
+
+.form-todo-btn:hover {
+  color: #fff;
+  background-color: #777;
+}
+

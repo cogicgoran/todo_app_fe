@@ -1,0 +1,25 @@
+.task-list {
+    margin-top: 24px;
+}
+
+.task-delete-all-btn {
+    padding: .4em;
+    border-radius: .4em;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 150ms, background-color 150ms;
+}
+
+.task-delete-all {
+    text-align: center;
+}
+
+.task-delete-all-btn svg {
+    margin: 0 4px;
+}
+
+.task-delete-all-btn:hover {
+    color: red;
+    background-color: #ddd;
+}
+
