@@ -9,6 +9,10 @@ export interface FormRegisterData extends FormLoginData {
     username: string;
 }
 
+export interface FormPasswordResetData {
+    email: string;
+}
+
 export interface FormLoginError {
     email?: FieldError | undefined;
     password?: FieldError | undefined;
@@ -16,4 +20,8 @@ export interface FormLoginError {
 
 export interface FormRegisterError extends FormLoginError { 
     username?: FieldError | undefined;
+}
+
+export interface FormPasswordResetError  { 
+    email?: FieldError | undefined;
 }

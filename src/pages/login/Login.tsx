@@ -7,6 +7,7 @@ import './Login.css';
 import { useHttp } from "../../hooks/useHttp";
 import { FormLoginData } from "../../interfaces/Auth";
 import { useClearAllErrors, useFormErrors, useOnSubmit } from "./hooks/Login.hooks";
+import { PATHS } from '../../helper/paths.const';
 
 function Login(): JSX.Element {
     const { register, handleSubmit, clearErrors: clearFormErrors, formState: { errors } } = useForm<FormLoginData>({
@@ -42,7 +43,8 @@ function Login(): JSX.Element {
                 {httpError && <ErrorMessage key={httpError.message} message={httpError.message} />}
                 <Button className="form-auth-btn" type="submit">LOGIN</Button>
             </form>
-            <Link className="form-auth-link" to='/register'>Don't have an account? Register here</Link>
+            <p><Link className="form-auth-link" to={PATHS.PASSWORD_RESET}>Forgot password?</Link></p>
+            <p><Link className="form-auth-link" to={PATHS.REGISTER}>Don't have an account? Register here</Link></p>
         </div>
     );
 }
